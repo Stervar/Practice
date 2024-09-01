@@ -24,3 +24,12 @@ def add_word():
     height = input("Введите слово на английском: ")
     dictionary_wor[name] = height
     print(f"Слово {name} добавлено в список!")
+
+def delete_word():
+    # Удаляем слово из списка
+    name = input("Введите слово для удаления: ")
+    if name in dictionary_wor:
+        del dictionary_wor[name]
+        print(f"Слово {name} удалено из списка!")
+    else:
+        print(f"Слово {name} не найдено в списке!")
