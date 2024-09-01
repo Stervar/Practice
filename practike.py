@@ -41,7 +41,7 @@ def search_word():
         print(f"Слово {name} найдено! Это слово по-английски: {dictionary_wor[name]} ")
     else:
         print(f"Слово {name} не найдено в списке!")
-        
+
 def replace_word():
     # Заменяем информацию о слове
     name = input("Введите слово на русском для замены: ")
@@ -51,3 +51,27 @@ def replace_word():
         print(f"Информация о слове {name} обновлена!")
     else:
         print(f"Слово {name} не найдено в списке!")
+
+
+        while True:
+     print("Меню:")
+     print("1. Прибавить два числа")
+     print("2. Убавить два числа ")
+     print("3. Умножить два числа")
+     print("4. Разделить два числа")
+     print("5. Выход")
+     
+     choice = int(input("Выберите пункт меню: "))
+
+     if choice == 1:
+         add_word()
+     elif choice == 2:
+         delete_word()
+     elif choice == 3:
+         search_word()
+     elif choice == 4:
+         replace_word()
+     elif choice == 5:
+         break
+     else:
+         print("Неверный выбор!")
