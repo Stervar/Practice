@@ -33,3 +33,11 @@ def delete_word():
         print(f"Слово {name} удалено из списка!")
     else:
         print(f"Слово {name} не найдено в списке!")
+        
+def search_word():
+    # Ищем слово на русском
+    name = input("Введите слово для поиска: ")
+    if name in dictionary_wor:
+        print(f"Слово {name} найдено! Это слово по-английски: {dictionary_wor[name]} ")
+    else:
+        print(f"Слово {name} не найдено в списке!")
