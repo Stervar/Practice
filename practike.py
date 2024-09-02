@@ -1,77 +1,81 @@
 
 
 # Простейшие арифметические операции (1)
+# 
+# Написать функцию arithmetic, принимающую 3 аргумента: первые 2 - числа, третий - операция, которая должна быть произведена над ними. Если третий аргумент +, сложить их; если —, то вычесть; * — умножить; / — разделить (первое на второе). В остальных случаях вернуть строку "Неизвестная операция".
 
-# Написать функцию arithmetic,
-# принимающую 3 аргумента: 
-# первые 2 - числа, третий - операция,
-# которая должна быть произведена над ними.
-# Если третий аргумент +, сложить их; если —,
-# то вычесть; * — умножить; / — разделить (первое на второе).
-# В остальных случаях вернуть строку "Неизвестная операция".
-
-
-
-a =int(input("Введите первое любое число "))
+# def arithmetic(a, b, operation):
+#     """
+#     Функция, выполняющая арифметические операции над двумя числами.
+# 
+#     Args:
+#         a (int): Первое число.
+#         b (int): Второе число.
+#         operation (str): Операция, которую нужно выполнить. Может быть "+", "-", "*", "/".
+# 
+# 
+#     Returns:
+#         int или float: Результат операции. Если операция неизвестна, возвращает строку "Неизвестная операция".
+#     """
+#     if operation == "+":
+#         return a + b
+#     elif operation == "-":
+#         return a - b
+#     elif operation == "*":
+#         return a * b
+#     elif operation == "/":
+#         if b != 0:
+#             return a / b
+#         else:
+#             return "Деление на ноль!"
+#     else:
+#         return "Неизвестная операция"
+# 
+# 
+# Пример использования функции
+# a = int(input("Введите первое число: "))
+# b = int(input("Введите второе число: "))
+# operation = input("Введите операцию (+, -, *, /): ")
+# 
+# result = arithmetic(a, b, operation)
+# print("Результат:", result)
+# 
+# def main():
+#     while True:
+#         print("Меню:")
+#         print("1. Прибавить два числа")
+#         print("2. Убавить два числа ")
+#         print("3. Умножить два числа")
+#         print("4. Разделить два числа")
+#         print("5. Выход")
+# 
+#         choice = int(input("Выберите пункт меню: "))
+# 
+#         if choice == 1:
+#             a = int(input("Введите первое число: "))
+#             b = int(input("Введите второе число: "))
+#             print("Результат:", arithmetic(a, b, "+"))
+#         elif choice == 2:
+#             a = int(input("Введите первое число: "))
+#             b = int(input("Введите второе число: "))
+#             print("Результат:", arithmetic(a, b, "-"))
+#         elif choice == 3:
+#             a = int(input("Введите первое число: "))
+#             b = int(input("Введите второе число: "))
+#             print("Результат:", arithmetic(a, b, "*"))
+#         elif choice == 4:
+#             a = int(input("Введите первое число: "))
+#             b = int(input("Введите второе число: "))
+#             print("Результат:", arithmetic(a, b, "/"))
+#         elif choice == 5:
+#             break
+#         else:
+#             print("Неверный выбор!")
+# 
+# if name == "main":
+#     main()
+#     
+   
     
- a =int(input("Введите второе любое число "))
-  
-dictionary_wor = {}
- 
-def add_word():
-    # Добавляем новое слово
-    name = input("Введите слово на русском: ")
-    height = input("Введите слово на английском: ")
-    dictionary_wor[name] = height
-    print(f"Слово {name} добавлено в список!")
 
-def delete_word():
-    # Удаляем слово из списка
-    name = input("Введите слово для удаления: ")
-    if name in dictionary_wor:
-        del dictionary_wor[name]
-        print(f"Слово {name} удалено из списка!")
-    else:
-        print(f"Слово {name} не найдено в списке!")
-
-def search_word():
-    # Ищем слово на русском
-    name = input("Введите слово для поиска: ")
-    if name in dictionary_wor:
-        print(f"Слово {name} найдено! Это слово по-английски: {dictionary_wor[name]} ")
-    else:
-        print(f"Слово {name} не найдено в списке!")
-
-def replace_word():
-    # Заменяем информацию о слове
-    name = input("Введите слово на русском для замены: ")
-    if name in dictionary_wor:
-        new_height = input("Введите новое слово на английском: ")
-        dictionary_wor[name] = new_height
-        print(f"Информация о слове {name} обновлена!")
-    else:
-        print(f"Слово {name} не найдено в списке!")
-
-
-        while True:
-     print("Меню:")
-     print("1. Прибавить два числа")
-     print("2. Убавить два числа ")
-     print("3. Умножить два числа")
-     print("4. Разделить два числа")
-     print("5. Выход")
-     
-     choice = int(input("Выберите пункт меню: "))
-
-     if choice == 1:
-         add_word()
-     elif choice == 2:
-         delete_word()
-     elif choice == 3:
-         search_word()
-     elif choice == 4:
-         replace_word()
-     elif choice == 5:
-         break
-     else:
-         print("Неверный выбор!")
+#
